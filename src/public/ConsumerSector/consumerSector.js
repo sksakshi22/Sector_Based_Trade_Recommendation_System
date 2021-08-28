@@ -49,7 +49,7 @@ const options = {
       }
       //storePE.sort(compareName).reverse();
       storePE.sort(function(a, b) {
-        return b.PE - a.PE;
+        return a.PE - b.PE;
       });
 
       const jsonString = JSON.stringify(storePE)

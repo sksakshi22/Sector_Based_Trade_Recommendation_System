@@ -51,7 +51,7 @@ request(options, function (error, response, body) {
    // storePE.sort(compareName).reverse();
    //storePE.sort((a,b) => (a.PE > b.PE) ? 1 : ((b.PE > a.PE) ? -1 : 0))
    storePE.sort(function(a, b) {
-    return b.PE - a.PE;
+    return a.PE - b.PE;
   });
 
   const jsonString = JSON.stringify(storePE)
